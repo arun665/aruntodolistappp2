@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Document</title>
+
+    <style>
+        body{
+            background-color: #ADEFD1FF;
+        }
+   .btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  transition: 1s;
+}
+
+.btn:hover {opacity: 1 ;border-radius:20px;}
+ 
+ .input{
+    background: transparent;
+  border-bottom: 1px solid white;
+    transition: 1s;
+    color:white;
+
+ }
+
+ .input:hover{
+   border-radius:20px;
+   color:white;
+   background-color: #1a66ff;
+ }
+      #signin{
+        display:none;
+      }
+    </style>
+
+
+
+<style>
+  .fa {
+    padding: 20px;
+    
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    border-radius:5px;
+    
+    transition:1s;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      background-color:green;
+      border-radius:25px;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-envelope {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-telegram {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+  
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+  
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+  
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  
+  .fa-rss {
+    background: #ff6600;
+    color: white;
+  }
+  .menuitem{
+    color: green;
+    border-radius:5px;
+    border:2px solid green;
+    margin-right:3px;
+    margin-top:3px;
+
+    transition: 1s;
+}
+.menuitem:hover{
+    
+    color: red;
+    border:2px solid red;
+    border-radius: 25px;
+    background-color:red;
+
+}
+
+  </style>
+  
+</head>
+<body>
+
+
+      
+    <nav class="navbar " style="padding:1%;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" style="background-color:black"   class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"  style="background-color:white"></span>
+            <span class="icon-bar"  style="background-color:white"></span>
+            <span class="icon-bar"  style="background-color:white"></span>                        
+          </button>
+          <a class="navbar-brand" href="#" style="  font-family: 'Sofia';font-size: 32px;"> To-do List app</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+       
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signup" class="menuitem"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/signin" class="menuitem"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+
+  
+<hr>
+
+<div class="container" style="width:80%;">
+
+<h2 style="font-family: Sofia;text-align: center;"><span id="typed"></span></h2>
+</div>
+
+  
+
+<div class="container" style="background-color:#d580ff;color:white;margin-top:5%;border:1px solid white;box-shadow:4px 4px 6px 6px gray;padding:1%;width:80%;">
+  <h2 style="font-family:Sofia;text-align: center;"> <span class="glyphicon glyphicon-log-in"></span> Please login or signup to start with the app </h2>
+
+
+</div>
+
+
+
+
+<div class="container" style="margin-top:8%;padding:1%;width:80%;margin-right:10%;margin-left:10%;position:absolute;bottom:3%;border-radius: 25px;;">
+  
+
+
+  <table style="width:100%;border-spacing:2px;text-align:center">
+    <tr>
+  
+      <th rowspan="2">   <h3 style="font-family:Sofia;float: right;"> Creator-> </h3>
+      </th>
+     <th style="font-family: Sofia;text-align: center;"><h2> Arun Sharma </h2></th>
+    </tr>
+    <tr >
+      
+      <td>
+  
+        <a href="https://www.linkedin.com/in/arun-sharma-98b8881a6/" style="padding-right:20px;" class="fa fa-linkedin"></a>
+  
+        <a href="https://www.instagram.com/ar.un8932/" class="fa fa-instagram"></a>
+        <a href="mailto:arunsharmamoh@gmail.com"  class="fa fa-envelope"></a>
+        <a href="https://t.me/Arun_boss181" class="fa fa-telegram"></a>
+        
+  
+      </td>
+     
+    </tr>
+  </table>
+  
+  
+  </div>
+  
+  
+
+
+
+
+
+
+<script>
+ 
+ var typed = new Typed('#typed', {
+  strings: ['Welcome to our todolist app', 'Please sign up and visit the app'],
+  smartBackspace: true ,// Default value,
+  typeSpeed: 50,
+  backSpeed:50,
+  smartBackspace:true,
+  loop:true,
+
+
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

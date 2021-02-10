@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<title>Document</title>
+
+    <style>
+        body{
+            background-color: #ADEFD1FF;
+        }
+   .btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  transition: 1s;
+}
+
+.btn:hover {opacity: 1 ;border-radius:20px;background-color: green;}
+ 
+ .input{
+    background: transparent;
+  border-bottom: 1px solid white;
+    transition: 1s;
+    color:white;
+
+ }
+ .menuitem{
+    color: green;
+    border-radius:5px;
+    border:2px solid green;
+    margin-right:3px;
+    margin-top:3px;
+
+    transition: 1s;
+}
+.menuitem:hover{
+    
+    color: red;
+    border:2px solid red;
+    border-radius: 25px;
+    background-color:red;
+
+}
+
+ .input:hover{
+   border-radius:20px;
+   color:white;
+   background-color: #1a66ff;
+ }
+
+    </style>
+</head>
+<body>
+
+
+      
+    <nav class="navbar " style="padding:1%;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" style="background-color:black"   class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"  style="background-color:white"></span>
+            <span class="icon-bar"  style="background-color:white"></span>
+            <span class="icon-bar"  style="background-color:white"></span>                        
+          </button>
+          <a class="navbar-brand" href="#" style="  font-family: 'Sofia';font-size: 32px;"> To-do List app</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+       
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signup" class="menuitem"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/signin" class="menuitem"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+
+  
+<hr>
+   
+
+    
+
+
+<div class="container" style="background-color:#66a3ff;color:white;width:80%;border:0px solid grey;box-shadow:6px 6px 6px 6px grey;padding:3%;margin-top:7%;border-radius:15px;">
+    <div>
+       <h2 style="font-family: Sofia;"> <span class="glyphicon glyphicon-log-in"></span> Login </h2>
+    </div>
+    <br>
+
+          <% if(error!=""){ %>
+            <div class="alert alert-danger">
+           
+                <%=error%>
+            </div>           <%}%>
+
+     
+        <form action="/signin" method="POST" id="signin">
+          <div class="form-group">
+            <label for="uname">E-mail:</label>
+            <input type="email" class="input form-control" id="uname" name="email" required>
+
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="input form-control" id="pwd"  name="password" required>
+         
+          </div>
+   
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <br>
+          &nbsp &nbsp
+          <p> Dont have an account &nbsp<a href="/signup" style="color: seagreen;"> signup </a> </p>
+        </form>
+      </div>
+      
+
+
+<script>
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
