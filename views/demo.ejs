@@ -72,7 +72,7 @@
   
 
   
-<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="position:fixed;bottom:0px;width:100%;">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="position:fixed;bottom:2px;width:100%;">
     <a class="navbar-brand" href="#"> Signed as-> <%= datas[0].email %>   </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -80,7 +80,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar" style="position:relative;right:5px">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link  btn btn-danger" style="color:white" href="/logout">Logout</a>
+          <a class="nav-link  btn btn-danger" style="color:white;margin-top:3%;" href="/logout">Logout</a>
         </li>
 
       </ul>
@@ -97,12 +97,12 @@
         <form class="form-inline" method="POST" action="/addtask" >
           <div class="form-group">
             <label for="email">Task-></label>
-            <input type="text" class="form-control" id="email" placeholder="Enter email" name="task" required>
+            <input type="text" class="form-control" id="email" placeholder="Enter task" name="task" required>
           </div>
 &nbsp&nbsp
           <div class="form-group">
-            <label for="pwd">Password-></label>
-            <input type="time" class="form-control" id="pwd" placeholder="Enter password" name="time" required>
+            <label for="pwd">Time-></label>
+            <input type="time" class="form-control" id="pwd"  name="time" required>
           </div>
           &nbsp&nbsp
           <div class="form-group">
